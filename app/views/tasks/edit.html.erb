@@ -1,0 +1,18 @@
+<%= form_with(model: @task, local: true, class: "container") do |form| %>
+  <div class="form-group mb-3"> <!-- Adds margin-bottom -->
+    <%= form.label :title, class: "form-label" %> <!-- Bootstrap label class -->
+    <%= form.text_field :title, class: "form-control" %> <!-- Bootstrap form control class for text fields -->
+  </div>
+
+  <div class="form-group mb-3">
+    <%= form.label :details, class: "form-label" %>
+    <%= form.text_area :details, class: "form-control" %> <!-- Text area with form control class -->
+  </div>
+
+  <div class="form-group mb-3">
+    <%= form.label :completed, class: "form-label" %>
+    <%= form.check_box :completed, class: "form-check-input" %> <!-- Check box with form check input class -->
+  </div>
+
+  <%= form.submit 'Save Changes', class: "btn btn-primary" %> <!-- Button with primary button class -->
+<% end %>

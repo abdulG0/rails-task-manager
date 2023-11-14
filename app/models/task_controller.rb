@@ -1,0 +1,2 @@
+class TaskController < ApplicationRecord
+end
